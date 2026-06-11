@@ -1,2 +1,2 @@
 # slopstack-labs.github.io
-Our Website
+Our GitHub Pages website.
