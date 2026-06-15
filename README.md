@@ -6,13 +6,13 @@
 
 This repository materializes the stakeholder-facing web presence for **SlopStack Labs** — an independent research lab operating at the frontier of AI-native developer tooling, inference-layer compilation, and zero-determinism software delivery.
 
-The page is deployed via GitHub Pages and serves as the primary ecosystem engagement surface for the SlopStack Labs portfolio of open-source projects.
+The page is deployed via GitHub Pages on the custom domain [slopstacklabs.ch](https://slopstacklabs.ch) (see [`CNAME`](CNAME)) and serves as the primary ecosystem engagement surface for the SlopStack Labs portfolio of open-source projects.
 
 ## Projects
 
 | Project | Modality | Status |
 |---------|----------|--------|
-| [Sloppiler](https://slopstack-labs.github.io/sloppiler/) | AI-native compilation via LLM inference | ✅ shipped |
+| [Sloppiler](https://slopstacklabs.ch/sloppiler/) | AI-native compilation via LLM inference | ✅ shipped |
 | Sloplinker | Inference-layer symbol resolution | 🔄 in progress |
 | Slopdebug | Post-hoc segfault remediation via LLM | 🗺️ planned |
 | Slopmake | Ambient-context build orchestration | 🗺️ planned |
