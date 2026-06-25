@@ -470,7 +470,7 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
     <div class="section-header reveal">
       <div class="section-label">Open Source Projects</div>
       <h2 class="section-title">Tools we've shipped.<br>Results may vary.</h2>
-      <p class="section-sub">All projects are open source and production-ready in the sense that they compile.</p>
+      <p class="section-sub">All shipped projects are open source and production-ready in the sense that they compile.</p>
     </div>
     <div class="projects-grid">
 
@@ -486,30 +486,134 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
         </div>
       </a>
 
-      <div class="project-card project-card-wip reveal d1">
-        <div class="project-tag tag-purple">Linker · WIP</div>
-        <div class="project-title">Sloplinker</div>
-        <div class="project-desc">A linking-time inference pipeline that resolves symbol ambiguity through semantic reasoning rather than rigid symbol tables. In active research.</div>
+      <a href="https://github.com/slopstack-labs/sloppiler-vscode-extension" target="_blank" rel="noopener" class="project-card reveal d1">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-cyan">IDE Extension · Shipped</div>
+        <div class="project-title">Sloppiler VSCode Extension</div>
+        <div class="project-desc">Official IDE integration layer for the world's first AI-first (and only) compiler. Brings inference-layer compilation directly into your editor workflow — no terminal required.</div>
         <div class="project-meta">
-          <span class="project-meta-pill">Coming soon</span>
+          <span class="project-meta-pill">TypeScript · VSCode</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/slop-reveal" target="_blank" rel="noopener" class="project-card reveal d2">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-purple">Decompiler · Shipped</div>
+        <div class="project-title">slop-reveal</div>
+        <div class="project-desc">LLM-based binary decompiler that predicts your original source code from the compiled executable. Accuracy is a spectrum. Plausibility is guaranteed.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Inference-layer · Multi-provider</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/slop-frames" target="_blank" rel="noopener" class="project-card reveal d3">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-green">Data · Shipped</div>
+        <div class="project-title">slop-frames</div>
+        <div class="project-desc">Schema-free, inference-backed DataFrame computation layer with pluggable model backends. Why enforce a schema when the model can infer one at query time?</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Python · Pluggable backends</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/slop-science" target="_blank" rel="noopener" class="project-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-green">Data Science · Shipped</div>
+        <div class="project-title">slop-science</div>
+        <div class="project-desc">The SlopStack Data Science Suite — AI-native model evaluation, tokenmaxxed visualizations, and a Zero-Miss SQL data lake. Science, but make it non-deterministic.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Python · Zero-Miss SQL</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/slop-git" target="_blank" rel="noopener" class="project-card reveal d1">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-purple">Version Control · Shipped</div>
+        <div class="project-title">slop-git</div>
+        <div class="project-desc">Narrative-driven version control where merge conflicts are resolved with empathy, not algorithms. Rebases are now a collaborative storytelling exercise.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Go · Inference-layer VCS</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/pit" target="_blank" rel="noopener" class="project-card reveal d2">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-cyan">Version Control · Shipped</div>
+        <div class="project-title">pit</div>
+        <div class="project-desc">Prompt-native version control — commit intent, not code. The entire project is rebuilt from the prompt log on demand. Your codebase is now a retrieval problem.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Go · Prompt-layer VCS</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/sloppy-toppy" target="_blank" rel="noopener" class="project-card reveal d3">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-green">System Monitor · Shipped</div>
+        <div class="project-title">sloppy-toppy</div>
+        <div class="project-desc">System monitor that seductively roasts you for your PC usage. Surfaces CPU, memory, and disk vitals — then has them ridiculed by a crude, mean-spirited inference substrate in real time.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Go · Terminal UI</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <div class="project-card project-card-wip reveal">
+        <div class="project-tag tag-dim">OS · In Progress</div>
+        <div class="project-title">slop-os</div>
+        <div class="project-desc">Ground-up Rust OS with inference baked into the kernel — the first operating system that reasons about your intent before scheduling your process.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Rust · Active development</span>
+        </div>
+      </div>
+
+      <div class="project-card project-card-wip reveal d1">
+        <div class="project-tag tag-dim">Editor · In Progress</div>
+        <div class="project-title">sloppad--</div>
+        <div class="project-desc">Inference-augmented text editor — every save is a collaborative rewrite between you and the model. Your code is merely a suggestion.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Active development</span>
         </div>
       </div>
 
       <div class="project-card project-card-wip reveal d2">
-        <div class="project-tag tag-green">Debugger · WIP</div>
-        <div class="project-title">Slopdebug</div>
-        <div class="project-desc">Post-hoc core dump analysis via LLM. Feed a segfault, receive a plausible explanation. May or may not be correct. That's what --loop is for.</div>
+        <div class="project-tag tag-dim">CLI · In Progress</div>
+        <div class="project-title">sloppy-cli</div>
+        <div class="project-desc">AI-native agent harness with ambient video rendering and curated not-so-fun-fact delivery. A CLI that knows more than you need it to.</div>
         <div class="project-meta">
-          <span class="project-meta-pill">Research phase</span>
+          <span class="project-meta-pill">Active development</span>
         </div>
       </div>
 
       <div class="project-card project-card-wip reveal d3">
-        <div class="project-tag tag-dim">Build System · WIP</div>
+        <div class="project-tag tag-purple">Linker · In Progress</div>
+        <div class="project-title">Sloplinker</div>
+        <div class="project-desc">A linking-time inference pipeline that resolves symbol ambiguity through semantic reasoning rather than rigid symbol tables.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Active research</span>
+        </div>
+      </div>
+
+      <div class="project-card project-card-wip reveal">
+        <div class="project-tag tag-dim">Debugger · Planned</div>
+        <div class="project-title">Slopdebug</div>
+        <div class="project-desc">Post-hoc core dump analysis via LLM. Feed a segfault, receive a plausible explanation. May or may not be correct. That's what --loop is for.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Planned</span>
+        </div>
+      </div>
+
+      <div class="project-card project-card-wip reveal d1">
+        <div class="project-tag tag-dim">Build System · Planned</div>
         <div class="project-title">Slopmake</div>
         <div class="project-desc">A build system where targets, dependencies, and commands are inferred from ambient context. No Makefile required. No reproducibility guaranteed.</div>
         <div class="project-meta">
-          <span class="project-meta-pill">Concept stage</span>
+          <span class="project-meta-pill">Planned</span>
         </div>
       </div>
 
@@ -558,6 +662,8 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
       <div class="footer-links">
         <a href="https://github.com/slopstack-labs" target="_blank" rel="noopener">GitHub</a>
         <a href="https://slopstacklabs.ch/sloppiler/" target="_blank" rel="noopener">Sloppiler</a>
+        <a href="https://github.com/slopstack-labs/pit" target="_blank" rel="noopener">pit</a>
+        <a href="https://github.com/slopstack-labs/sloppy-toppy" target="_blank" rel="noopener">sloppy-toppy</a>
         <a href="https://github.com/slopstack-labs/sloppiler/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
       </div>
       <p class="footer-disclaimer">SlopStack Labs is a personal open-source project. Not responsible for segfaults in production, binary corruption, or existential crises triggered by reading this page.</p>
