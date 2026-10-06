@@ -13,6 +13,7 @@ The page is deployed via GitHub Pages on the custom domain [slopstacklabs.ch](ht
 | Project | Modality | Status |
 |---------|----------|--------|
 | [Sloppiler](https://slopstacklabs.ch/sloppiler/) | AI-native compilation via LLM inference | ✅ shipped |
+| [Sloppinux](https://slopstacklabs.ch/sloppinux/) | Inference-first Linux distribution | ✅ shipped |
 | Sloplinker | Inference-layer symbol resolution | 🔄 in progress |
 | Slopdebug | Post-hoc segfault remediation via LLM | 🗺️ planned |
 | Slopmake | Ambient-context build orchestration | 🗺️ planned |
@@ -21,7 +22,7 @@ The page is deployed via GitHub Pages on the custom domain [slopstacklabs.ch](ht
 
 Static HTML. No build step. No SSR. No unnecessary intermediate compilation layers.
 
-GitHub Pages serves `index.html` directly from the repository root — a zero-abstraction, direct-to-browser delivery pipeline fully aligned with the SlopStack Labs engineering philosophy.
+GitHub Pages serves `index.html` directly from the repository root — a zero-abstraction, direct-to-browser delivery pipeline fully aligned with the SlopStack Labs engineering philosophy. Project pages (Sloppiler, Sloppinux) are served from each project's own repository, out of its `docs/` directory.
 
 ## Contributing
 
