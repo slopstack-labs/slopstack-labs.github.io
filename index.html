@@ -280,6 +280,12 @@ nav.scrolled {
 .project-card-wip {
   opacity: 0.5; pointer-events: none;
 }
+.project-card-games { border-color: rgba(139,92,246,0.18); }
+.project-card-games:hover { border-color: rgba(139,92,246,0.5); }
+.project-card-games .project-card-glow {
+  background: radial-gradient(500px circle at var(--mx,-9999px) var(--my,-9999px), rgba(139,92,246,0.1), transparent 45%);
+}
+.project-card-games .project-arrow { color: var(--purple); }
 .project-card-wip .project-tag { filter: grayscale(1); }
 
 /* ── PHILOSOPHY CARDS ── */
@@ -381,6 +387,7 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
     <div class="nav-links">
       <a href="#projects">Projects</a>
       <a href="#philosophy">Philosophy</a>
+      <a href="games.html">Games</a>
       <a href="https://github.com/slopstack-labs" target="_blank" rel="noopener" class="nav-cta">GitHub →</a>
     </div>
   </div>
@@ -434,6 +441,8 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
     <span>Stakeholder-Grade Velocity</span><span class="sep">✦</span>
     <span>Binary Materialization</span><span class="sep">✦</span>
     <span>Agentic Toolchains</span><span class="sep">✦</span>
+    <span>Vibe Coverage</span><span class="sep">✦</span>
+    <span>Now Also Games</span><span class="sep">✦</span>
     <span>Inference-Layer Tooling</span><span class="sep">✦</span>
     <span>AI-Native Compilation</span><span class="sep">✦</span>
     <span>Zero Determinism</span><span class="sep">✦</span>
@@ -443,6 +452,8 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
     <span>Stakeholder-Grade Velocity</span><span class="sep">✦</span>
     <span>Binary Materialization</span><span class="sep">✦</span>
     <span>Agentic Toolchains</span><span class="sep">✦</span>
+    <span>Vibe Coverage</span><span class="sep">✦</span>
+    <span>Now Also Games</span><span class="sep">✦</span>
   </div>
 </div>
 
@@ -515,7 +526,7 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
         <div class="project-title">slop-reveal</div>
         <div class="project-desc">LLM-based binary decompiler that predicts your original source code from the compiled executable. Accuracy is a spectrum. Plausibility is guaranteed.</div>
         <div class="project-meta">
-          <span class="project-meta-pill">Inference-layer · Multi-provider</span>
+          <span class="project-meta-pill">C++ · Multi-provider</span>
           <span class="project-arrow">→</span>
         </div>
       </a>
@@ -548,7 +559,7 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
         <div class="project-title">slop-git</div>
         <div class="project-desc">Narrative-driven version control where merge conflicts are resolved with empathy, not algorithms. Rebases are now a collaborative storytelling exercise.</div>
         <div class="project-meta">
-          <span class="project-meta-pill">Go · Inference-layer VCS</span>
+          <span class="project-meta-pill">Python · Inference-layer VCS</span>
           <span class="project-arrow">→</span>
         </div>
       </a>
@@ -570,7 +581,42 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
         <div class="project-title">sloppy-toppy</div>
         <div class="project-desc">System monitor that seductively roasts you for your PC usage. Surfaces CPU, memory, and disk vitals — then has them ridiculed by a crude, mean-spirited inference substrate in real time.</div>
         <div class="project-meta">
-          <span class="project-meta-pill">Go · Terminal UI</span>
+          <span class="project-meta-pill">Rust · Terminal UI</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/slop-test" target="_blank" rel="noopener" class="project-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-green">Testing · Shipped</div>
+        <div class="project-title">slop-test</div>
+        <div class="project-desc">Assertion-free testing. A model reads each test's name and docstring and decides whether it feels like it passed. Vibe Coverage™, empathetic retries, roast mode, and juries of AI personas — in 22 languages, because it runs none of them.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Python · 22 languages</span>
+          <span class="project-meta-pill">--strict</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/slopstack-labs/sloppify" target="_blank" rel="noopener" class="project-card reveal d1">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-purple">Music · Shipped</div>
+        <div class="project-title">sloppify</div>
+        <div class="project-desc">Spotify-inspired desktop player with a catalog of exactly zero real songs. Every track is hallucinated live as Strudel pattern code and rendered in your browser's audio engine. All the algorithm, none of the artists.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">JavaScript · Electron · Strudel</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="games.html" class="project-card project-card-games reveal d2">
+        <div class="project-card-glow"></div>
+        <div class="project-tag tag-purple">Suborg · Year One</div>
+        <div class="project-title">Slopstack Games</div>
+        <div class="project-desc">Our games division. One year of development time, infinite fun, zero announced titles. The website is finished, which is the hard part. Stay tuned.</div>
+        <div class="project-meta">
+          <span class="project-meta-pill">Studio · slopstack-games</span>
+          <span class="project-meta-pill">press start</span>
           <span class="project-arrow">→</span>
         </div>
       </a>
@@ -677,6 +723,8 @@ footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
         <a href="https://slopstacklabs.ch/sloppinux/" target="_blank" rel="noopener">Sloppinux</a>
         <a href="https://github.com/slopstack-labs/pit" target="_blank" rel="noopener">pit</a>
         <a href="https://github.com/slopstack-labs/sloppy-toppy" target="_blank" rel="noopener">sloppy-toppy</a>
+        <a href="https://github.com/slopstack-labs/slop-test" target="_blank" rel="noopener">slop-test</a>
+        <a href="games.html">Games</a>
         <a href="https://github.com/slopstack-labs/sloppiler/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
       </div>
       <p class="footer-disclaimer">SlopStack Labs is a personal open-source project. Not responsible for segfaults in production, binary corruption, or existential crises triggered by reading this page.</p>
